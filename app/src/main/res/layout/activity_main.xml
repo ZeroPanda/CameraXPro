@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextureView
+        android:id="@+id/view_finder"
+        android:layout_width="400dp"
+        android:layout_height="552dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
     <ImageButton
         android:id="@+id/isoButton"
         android:layout_width="53dp"
@@ -109,17 +119,19 @@
         app:srcCompat="@color/colorAccent"
         tools:srcCompat="@drawable/ic_baseline_flash_on_24" />
 
-    <ToggleButton
-        android:id="@+id/captureButton"
-        android:layout_width="65dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="650dp"
-        android:layout_marginBottom="30dp"
-        android:contentDescription="Shot"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ToggleButton-->
+<!--        android:id="@+id/captureButton"-->
+<!--        android:layout_width="65dp"-->
+<!--        android:layout_height="52dp"-->
+<!--        android:layout_marginStart="150dp"-->
+<!--        android:layout_marginTop="650dp"-->
+<!--        android:layout_marginEnd="150dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:contentDescription="Shot"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <ImageButton
         android:id="@+id/intervalometerButton"
@@ -151,19 +163,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_image_24" />
 
-    <ImageView
-        android:id="@+id/cameraView"
-        android:layout_width="410dp"
-        android:layout_height="517dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="5dp"
+
+
+    <ImageButton
+        android:id="@+id/capture_button"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="24dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.373"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
